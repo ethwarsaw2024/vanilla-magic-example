@@ -6,7 +6,8 @@ import { dedicatedWalletConnector } from "@magiclabs/wagmi-connector";
 const magicConnector = dedicatedWalletConnector({
 	chains: [mainnet, sepolia],
 	options: {
-		apiKey: process.env.NEXT_PUBLIC_MAGIC_API_KEY as string,
+		// apiKey: process.env.NEXT_PUBLIC_MAGIC_API_KEY as string,
+		apiKey: 'pk_live_5AFEFBE949242697',
 		isDarkMode: true,
 		oauthOptions: {
 			providers: ["google", "facebook", "twitter", "discord"],
